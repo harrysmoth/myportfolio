@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="icons/tabform.png">
+    <title>Форма обратной связи - Игорь Бабурин</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header" id="main">
+        <div class="container">
+            <div class="header-inner">
+                <div class="header-logo">
+                    Igor<span>Baburin</span>
+                </div>
+                <div class="menu-link" href="#menu">
+                    <span class="menu-strips"></span>
+                </div>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html#main" class="nav-link">Главная</a></li>
+                    <li><a href="index.html#skills" class="nav-link">Мои навыки</a></li>
+                    <li><a href="index.html#about" class="nav-link">Обо мне</a></li>
+                    <li><a href="sertificats.html" class="nav-link">Мои сертификаты</a></li>
+                    <li><a href="#contact" class="nav-link">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Form -->
+    <div class="form">
+        <div class="container">
+            <div class="form-inner">
+                <form action="telegram.php" method="POST">
+                    <legend class="form-title">Пожалуйста, заполните форму</legend>
+                    <div class="form-group">
+                        <label for="">Введите имя</label>
+                        <input type="text" class="form-control" id="" name="user_name" placeholder="Например, Иван" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Введите фамилию</label>
+                        <input type="text" class="form-control" id="" name="user_lastname"
+                            placeholder="Например, Иванов" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Введите номер телефона</label>
+                        <input type="text" class="form-control" id="" name="user_data" placeholder="+7 (999) 99 99 999" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Как с Вами связаться</label>
+                        <input type="text" class="form-control" id="" name="user_com"
+                            placeholder="Название мессенджера или e-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Введите ваше сообщение</label>
+                        <textarea type="text" class="area-control" id="" name="user_mes"
+                            placeholder="Введите Ваше сообщение здесь..." required></textarea>
+                    </div>
+                    <div class="form-button">
+                        <button type="submit" class="button" id="buttonsend">Оставить заявку</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-col">
+                    <div class="footer-title">Мои социальные сети</div>
+                    <div class="footer-social">
+                        <div class="social"><a href="https://vk.com/igor.baburin" target="blank"><img src="icons/vk.svg"
+                                    alt="" class="social-link"></a>
+                            <a href="https://instagram.com/igor_baburin" target="blank"><img src="icons/instagram.svg"
+                                    alt="" class="social-link"></a>
+                            <a href="https://www.facebook.com/profile.php?id=100004349467465" target="blank"><img
+                                    src="icons/facebook.svg" alt="" class="social-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col"><a href="form.html" class="footer-link">Связаться со мной</a>
+                    <div><a href="blog.html" class="footer-link">Посмотреть мой блог</a></div>
+                </div>
+                <div class="footer-col">Designed and Created &hearts;<a class="footer-link"
+                        href="https://vk.com/igor.baburin">by Igor
+                        Baburin</a>
+                    <div>Copyright &COPY; 2020 All right reserved</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/buttonup.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/skills.js"></script>
+</body>
+
+</html>
